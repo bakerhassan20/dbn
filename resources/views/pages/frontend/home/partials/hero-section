@@ -1,0 +1,21 @@
+           <!-- swiper-slide start -->
+                <div class="swiper-slide">
+                    <div class="swiper-parallax-bg-box" data-swiper-parallax-y="50%">
+                        <div class="bg-img-cover height-100perc"
+                            style="background-image: url(assets/images/backgrounds/dj.jpg);">
+                            <video src="assets/vedio/4.mp4" class="video-bg" muted="" loop=""
+                                autoplay="" playsinline=""></video>
+
+                        </div>
+                        <div class="bg-overlay-black"></div>
+                    </div>
+                    <div class="pos-rel d-flex flex-center-center height-100perc" data-swiper-parallax-y="25%">
+                        <h2 class="headline-l after-preloader-anim">
+                            <span class="anim-text-fill" data-text="Design">Design </span>
+                            <span class="anim-text-fill tr-delay-01" data-text="By N">By N</span><br>
+                            <span id="js-typewriter" class="text-color-red"></span><br>
+                            <span class="anim-text-fill tr-delay-02" data-text="Based in">Based in</span>
+                            <span class="anim-text-fill tr-delay-03" data-text="SAU.">KSA.</span>
+                        </h2><!-- title end -->
+                    </div>
+                </div><!-- swiper-slide end -->
