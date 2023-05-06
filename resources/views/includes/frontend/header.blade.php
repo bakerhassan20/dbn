@@ -4,8 +4,9 @@
 	    <div class="header-logo js-midnight-color js-headroom" id="logo-box">
 	        <div class="hidden-box">
 	            <a href="index.html" class="header-logo__box js-pointer-large js-animsition-link">
-	                <img class="header-logo__img white" src="assets/images/logo/logo-white.png" alt="logo">
-	                <img class="header-logo__img black" src="assets/images/logo/logo-black.png" alt="logo">
+	        <img class="header-logo__img white" src="{{URL::asset('assets/frontend/images/logo/logo-white.png')}}" alt="logo">
+
+	                <img class="header-logo__img black" src="{{URL::asset('assets/frontend/images/logo/logo-black.png')}}" alt="logo">
 	            </a>
 	        </div>
 	    </div><!-- logo end -->
@@ -140,12 +141,12 @@
 	                <!-- dropdown start -->
 	                <ul class="menu-box dropdown js-dropdown">
 	                    <li class="nav-btn-box">
-	                        <a href="join-us.php" class="nav-btn js-animsition-link js-pointer-large">
+	                        <a href="{{ route('join-us') }}" class="nav-btn js-animsition-link js-pointer-large">
 	                            <span class="nav-btn__inner" data-text="Join Us">Join Us </span>
 	                        </a>
 	                    </li>
 	                    <li class="nav-btn-box">
-	                        <a href="cooperative-training.php" class="nav-btn js-animsition-link js-pointer-large">
+	                        <a href="{{ route('cooperative-training') }}" class="nav-btn js-animsition-link js-pointer-large">
 	                            <span class="nav-btn__inner" data-text="Cooperative Training">Cooperative Training</span>
 	                        </a>
 	                    </li>
@@ -156,7 +157,7 @@
 
 	            <!-- nav-btn-box start -->
 	            <li class="nav-btn-box">
-	                <a href="contact-us.php" class="nav-btn large dropdown-hidden-btn js-animsition-link js-pointer-large">
+	                <a href="{{ route('contact-us') }}" class="nav-btn large dropdown-hidden-btn js-animsition-link js-pointer-large">
 	                    <span class="nav-btn__inner" data-text="Contact">Contact</span>
 	                </a>
 	            </li><!-- nav-btn-box end -->

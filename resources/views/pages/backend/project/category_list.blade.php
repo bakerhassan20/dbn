@@ -581,11 +581,10 @@
                                     </div>
                                 </th>
 
-                                <th class="min-w-125px">Category Name</th>
-                                <th class="min-w-125px">Projects</th>
-                                <th class="min-w-125px">Status</th>
-
-                                <th class="text-end min-w-100px">Actions</th>
+                                <th class="min-w-125px">{{ __('messages.Category Name') }}</th>
+                                <th class="min-w-125px">{{ __('messages.Projects') }}</th>
+                                <th class="min-w-125px">{{ __('messages.Status') }}</th>
+                                <th class="text-end min-w-100px">{{ __('messages.Actions') }}</th>
                             </tr>
                             <!--end::Table row-->
                         </thead>

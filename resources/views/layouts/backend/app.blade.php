@@ -24,7 +24,7 @@
 <!--end::Head-->
 <!--begin::Body-->
 
-<body id="kt_body"
+<body id="kt_body"{{--   @if(LaravelLocalization::getCurrentLocale() == 'ar' ) dir="rtl" @endif --}}
     class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed"
     style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px">
     <!--begin::Main-->
@@ -2071,7 +2071,7 @@
     </div>
     <!--end::Help drawer-->
     <!--end::Engage drawers-->
- 
+
     <!--begin::Scrolltop-->
     <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
         <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
@@ -5114,25 +5114,32 @@
     <!--end::Modal - Users Search-->
     <!--end::Modals-->
     <!--begin::Javascript-->
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+
+@yield('js')
     <script>
         var hostUrl = "{{ asset('assets/backend/') }}";
     </script>
-    <script type="text/javascript">
+  {{--   <script type="text/javascript">
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
-        </script>
+        </script> --}}
     <!--begin::Global Javascript Bundle(used by all pages)-->
     <script src="{{ asset('assets/backend/plugins/global/plugins.bundle.js') }}"></script>
     <script src="{{ asset('assets/backend/js/scripts.bundle.js') }}"></script>
     <!--end::Global Javascript Bundle-->
     <!--begin::Page Vendors Javascript(used by this page)-->
- 
+
 
     @stack('script')
-    
+
     <!--end::Page Vendors Javascript-->
     <!--begin::Page Custom Javascript(used by this page)-->
     <script src="{{ asset('assets/backend/js/widgets.bundle.j') }}s"></script>
@@ -5142,8 +5149,8 @@
     <script src="{{ asset('assets/backend/js/custom/utilities/modals/create-app.js') }}"></script>
     <script src="{{ asset('assets/backend/js/custom/utilities/modals/users-search.js') }}"></script>
 
- 
- 
+
+
     <!--end::Javascript-->
 </body>
 <!--end::Body-->

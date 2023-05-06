@@ -59,12 +59,12 @@ data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_mobile_toggle"
                         </span>
                         <!--end::Svg Icon-->
                     </span>
-                    <span class="menu-title">Dashboards</span>
+                    <span class="menu-title">{{ __('messages.Dashboards') }}</span>
                  </span>
-           
+
             </div>
 
-            
+
             <div class="menu-item">
                 <div class="menu-content pt-8 pb-2">
                     <span class="menu-section text-muted text-uppercase fs-8 ls-1">Crafted</span>
@@ -90,17 +90,17 @@ data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_mobile_toggle"
                         </span>
                         <!--end::Svg Icon-->
                     </span>
-                    <span class="menu-title">MAnage Project</span>
+                    <span class="menu-title">{{ __('messages.MAnage Project') }}</span>
                     <span class="menu-arrow"></span>
                 </span>
                 <div class="menu-sub menu-sub-accordion menu-active-bg">
-         
+
                     <div class="menu-item">
                         <a class="menu-link" href="{{ route('project.categories')}}">
                             <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
                             </span>
-                            <span class="menu-title">Categories</span>
+                            <span class="menu-title">{{ __('messages.Categories') }}</span>
                         </a>
                     </div>
                     <div class="menu-item">
@@ -108,7 +108,7 @@ data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_mobile_toggle"
                             <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
                             </span>
-                            <span class="menu-title">Projects</span>
+                            <span class="menu-title">{{ __('messages.Projects') }}</span>
                         </a>
                     </div>
                 </div>
@@ -129,32 +129,32 @@ data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_mobile_toggle"
                         </span>
                         <!--end::Svg Icon-->
                     </span>
-                    <span class="menu-title">Account</span>
+                    <span class="menu-title">{{ __('messages.Job Application') }}</span>
                     <span class="menu-arrow"></span>
                 </span>
                 <div class="menu-sub menu-sub-accordion menu-active-bg">
                     <div class="menu-item">
-                        <a class="menu-link" href="../../demo1/dist/account/overview.html">
+                        <a class="menu-link" href="{{ route('join.list') }}">
                             <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
                             </span>
-                            <span class="menu-title">Overview</span>
+                            <span class="menu-title">{{ __('messages.Join us') }}</span>
                         </a>
                     </div>
                     <div class="menu-item">
-                        <a class="menu-link" href="../../demo1/dist/account/settings.html">
+                        <a class="menu-link" href="{{ route('cooperative.list') }}">
                             <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
                             </span>
-                            <span class="menu-title">Settings</span>
+                            <span class="menu-title">{{ __('messages.Cooperative Training') }}</span>
                         </a>
                     </div>
                     <div class="menu-item">
-                        <a class="menu-link" href="../../demo1/dist/account/security.html">
+                        <a class="menu-link" href="{{ route('contact.list') }}">
                             <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
                             </span>
-                            <span class="menu-title">Security</span>
+                            <span class="menu-title">{{ __('messages.Contact Us') }}</span>
                         </a>
                     </div>
                     <div class="menu-item">

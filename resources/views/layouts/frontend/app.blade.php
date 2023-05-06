@@ -29,9 +29,23 @@
         <i class="pointer__inner fas fa-search"></i>
         <i class="pointer__inner fas fa-link"></i>
     </div><!-- pointer end -->
-    
+
     @include('includes.frontend.header')
 
+    <!-- to top btn start -->
+    <a href="#up" class="scroll-to-btn js-headroom js-midnight-color js-smooth-scroll js-pointer-large">
+        <span class="scroll-to-btn__box">
+            <span class="scroll-to-btn__arrow"></span>
+        </span>
+    </a><!-- to top btn end -->
+
+    <!-- scroll down btn start -->
+    <a href="#down"
+        class="scroll-to-btn to-down js-headroom js-midnight-color js-smooth-scroll js-pointer-large js-scroll-btn">
+        <span class="scroll-to-btn__box">
+            <span class="scroll-to-btn__arrow"></span>
+        </span>
+    </a><!-- scroll down btn end -->
     <!-- main start -->
     <main class="js-animsition-overlay" data-animsition-overlay="true">
         @yield('content')
